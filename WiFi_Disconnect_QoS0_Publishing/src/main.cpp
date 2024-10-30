@@ -1,19 +1,20 @@
 #include <Arduino.h>
 
-#include "secrets/wifi.h"
+#include "WiFi.h"
 #include "wifi_connect.h"
 #include <WiFiClientSecure.h>
 #include "ca_cert.h"
 
-#include "secrets/mqtt.h"
 #include <PubSubClient.h>
+#include "mqtt.h"
+
 
 #include <Ticker.h>
 
 namespace
 {
-    const char *ssid = WiFiSecrets::ssid;
-    const char *password = WiFiSecrets::pass;
+    const char *ssid = WiFiSecrets::Votuyen217;
+    const char *password = WiFiSecrets::votuyen217@;
     const char *echo_topic = "esp32/echo_test";
     unsigned int publish_count = 0;
     uint16_t keepAlive = 15;    // seconds (default is 15)
@@ -50,7 +51,7 @@ void mqttReconnect()
         Serial.println("Attempting MQTT connection...");
         String client_id = "esp32-client-";
         client_id += String(WiFi.macAddress());
-        if (mqttClient.connect(client_id.c_str(), MQTT::username, MQTT::password))
+        if (mqttClient.connect(client_id.c_str(), MQTT::mqtt_daoquy, MQTT::14092003))
         {
             Serial.print(client_id);
             Serial.println(" connected");
@@ -77,7 +78,7 @@ void setup()
     // mqttClient.setSocketTimeout(socketTimeout); // To see how long mqttClient detects the TCP connection is lost
 
     mqttClient.setCallback(mqttCallback);
-    mqttClient.setServer(MQTT::broker, MQTT::port);
+    mqttClient.setServer(MQTT::mqtt_daoquy, MQTT::8883);
     mqttPulishTicker.attach(1, mqttPublish);
 }
 
