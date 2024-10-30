@@ -7,8 +7,13 @@
 
 - Tải và cài đặt mosquitto broker từ  https://mosquitto.org/
 - Sử dụng MQTT Explorer thực hiện gửi tin nhắn để biết được thiết lập kết nối đến mosquitto là thành công
+<<<<<<< HEAD
 
 # Kết quả
 - ![Mosquitto]("C:\Users\QUY\Pictures\Screenshots\Screenshot 2024-10-31 050327.png")
 
 
+=======
+
+# Kết quả
+>>>>>>> 47699b77f65ba9d39913a72a7137937c4255eec5
