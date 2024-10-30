@@ -10,10 +10,6 @@
 <<<<<<< HEAD
 
 # Kết quả
-- ![Mosquitto]("C:\Users\QUY\Pictures\Screenshots\Screenshot 2024-10-31 050327.png")
+- ![Mosquitto_MQTTExplorer](./image/Mosquitto_MQTTExplorer.png "Mosquitto_MQTTExplore")
 
 
-=======
-
-# Kết quả
->>>>>>> 47699b77f65ba9d39913a72a7137937c4255eec5
