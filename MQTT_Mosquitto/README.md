@@ -7,7 +7,7 @@
 
 - Tải và cài đặt mosquitto broker từ  https://mosquitto.org/
 - Sử dụng MQTT Explorer thực hiện gửi tin nhắn để biết được thiết lập kết nối đến mosquitto là thành công
-<<<<<<< HEAD
+- Tải và cài đặt OpenSSL để thực hiện với port 8883 (TLS)
 
 # Kết quả
 - ![Mosquitto_MQTTExplorer](./image/Mosquitto_MQTTExplorer.png "Mosquitto_MQTTExplore")
